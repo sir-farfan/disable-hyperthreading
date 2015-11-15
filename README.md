@@ -10,9 +10,11 @@ of that techonoloy and I try no to keep useless stuff around.
 
 ## Installing
 Copy `disable-ht.service` to `/etc/systemd/system/`
+
 Copy `disableht.sh` to `/usr/local/sbin/`
 
 Optional: make the service start at boot `systemctl enable disable-ht`
+
 Optional: run it with `systemctl start disable-ht`
 
 ## Check it worked
