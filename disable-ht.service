@@ -1,0 +1,17 @@
+# Author: Ismael Farfan
+# Source: https://github.com/sir-farfan/disable-hyperthreading
+# Licence: GPL v2
+
+[Unit]
+Description=Disable the useless hyperthreading
+#Before=network.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=-/usr/local/sbin/disableht.sh 1
+ExecStop=/usr/local/sbin/disableht.sh
+
+[Install]
+WantedBy=multi-user.target
+
